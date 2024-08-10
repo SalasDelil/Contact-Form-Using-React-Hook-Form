@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+# Contact Form Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and elegant Contact Form application built with React, TypeScript, and Vite. The application features a form with full name, email, and message fields, along with validation, fancy UI elements, and animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: The UI is fully responsive and works well on all screen sizes.
+- **Form Validation**: Client-side validation is implemented using `react-hook-form` to ensure all fields are correctly filled out.
+- **Smooth Animations**: The form elements feature smooth animations for an enhanced user experience.
+- **Customizable**: Easily customizable CSS with modular stylesheets for each component.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Vite**: A fast build tool that serves as an alternative to create-react-app.
+- **CSS**: For styling the application, including animations and responsive design.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To get started with the project, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repository:**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    ```bash
+    git clone https://github.com/SalasDelil/Contact-Form-Using-React-Hook-Form-task-5.git
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd Contact-Form-Using-React-Hook-Form-task-5
+    ```
+
+3. **Install the dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5. **Build the app for production:**
+
+    ```bash
+    npm run build
+    ```
+
+6. **Preview the production build:**
+
+    ```bash
+    npm run preview
+    ```
+
+## Usage
+
+After starting the development server, open your browser and navigate to `http://localhost:5173`. You should see the contact form where users can enter their full name, email, and message.
+
+Fill out the form and submit it to see the form data logged in the console.
+
+## Screenshots
+
+### 1. **Form Layout**
+
+![Form Layout](./src/screenshots/form-layout.png)
+
+### 2. **Validation Error States**
+
+![Validation Error](./src/screenshots/validation-error.png)
+
+### 3. **Submit Button Hover Animation**
+
+![Submit Button Hover](./src/screenshots/button-hover.png)
+
+> **Note:** Screenshots should be placed in a `screenshots` folder within the root directory of your project. You can capture screenshots by running the application locally and using any screenshot tool.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
