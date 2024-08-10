@@ -76,7 +76,6 @@ Fill out the form and submit it to see the form data logged in the console.
 
 ![Submit Button Hover](./src/screenshots/button-hover.png)
 
-> **Note:** Screenshots should be placed in a `screenshots` folder within the root directory of your project. You can capture screenshots by running the application locally and using any screenshot tool.
 
 ## Contributing
 
